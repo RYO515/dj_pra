@@ -10,3 +10,6 @@ class BoardModel(models.Model):
     good = models.IntegerField()
     read = models.IntegerField()
     readtext = models.TextField()
+
+    def __str__(self):
+        return self.title
